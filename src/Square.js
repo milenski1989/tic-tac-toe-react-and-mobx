@@ -6,7 +6,7 @@ import { observer } from "mobx-react";
 const Square = observer(({index, store }) => {
  
 
-  return <button disabled={store.disableAllButtons}
+  return <button disabled={store.disableAllFields}
         className={store.activePlayer === 'X' ? 'field-red' : 'field-blue'}
         onClick={() => store.play(index)}
         

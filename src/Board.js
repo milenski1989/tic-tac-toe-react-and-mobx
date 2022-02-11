@@ -17,7 +17,7 @@ const Board = observer(() => {
 
       {store.winner ? (
         <>
-          {store.disableAllFields = true}
+     {store.disableAllFields = true}
           <h1 className="result">{store.activePlayer} wins!</h1>{" "}
           <button className="btn" onClick={store.playAgain}>
             play another game
