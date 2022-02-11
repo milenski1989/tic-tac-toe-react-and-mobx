@@ -23,7 +23,8 @@ const Board = observer(() => {
             play another game
           </button>
         </>
-      ) : (
+      ) :
+       (
         <>
           <button className="btn" onClick={store.clearAll}>
             clear all
@@ -31,12 +32,12 @@ const Board = observer(() => {
         </>
       )}
 
-      <h3 className="result-playerX">
+      {/* <h3 className="result-playerX">
         player X result is: {store.resultX} points
       </h3>
       <h3 className="result-playerO">
         player O result is: {store.resultO} points
-      </h3>
+      </h3> */}
     </>
   );
 });
