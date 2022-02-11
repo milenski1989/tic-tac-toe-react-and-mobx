@@ -32,12 +32,6 @@ const Board = observer(() => {
         </>
       )}
 
-      {/* <h3 className="result-playerX">
-        player X result is: {store.resultX} points
-      </h3>
-      <h3 className="result-playerO">
-        player O result is: {store.resultO} points
-      </h3> */}
     </>
   );
 });
