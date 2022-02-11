@@ -15,18 +15,32 @@ const Board = observer(() => {
         ))}
       </div>
 
-      {store.result ? (
+      {store.winner ? (
         <>
+          {(store.disableAllButtons = true)}
           <h1 className="result">{store.activePlayer} wins!</h1>{" "}
-          <button className="play-again" onClick={store.playAgain}>play again</button>
+          <button className="btn" onClick={store.playAgain}>
+            play another game
+          </button>
         </>
-      ) : 
-      <>
-      <button className="play-again" onClick={store.playAgain}>play again</button>
-      </>
-      }
+      ) : (
+        <>
+          <button className="btn" onClick={store.clearAll}>
+            clear all
+          </button>
+        </>
+      )}
+
+      <h3 className="result-playerX">
+        player X result is: {store.resultX} points
+      </h3>
+      <h3 className="result-playerO">
+        player O result is: {store.resultO} points
+      </h3>
     </>
   );
 });
 
 export default Board;
+
+/*  */

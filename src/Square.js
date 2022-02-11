@@ -6,17 +6,13 @@ import { observer } from "mobx-react";
 const Square = observer(({index, store }) => {
  
 
-  return (
-    <>
-      <button
-        className="field"
-      
+  return <button disabled={store.disableAllButtons}
+        className={store.activePlayer === 'X' ? 'field-red' : 'field-blue'}
         onClick={() => store.play(index)}
+        
       >
         {store.boardArr[index]}
       </button>
-    </>
-  );
 });
 
 export default Square;

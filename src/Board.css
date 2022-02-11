@@ -15,7 +15,7 @@
     50%{    color: orange; }
     100%{   color: red;    }
 }
-.play-again{
+.btn{
     display: block;
   padding: 0.5rem 1rem;
         border: 1px solid black;
@@ -28,7 +28,7 @@
         border-radius: 8px;
         color: whitesmoke;
 }
-.play-again:hover{
+.btn:hover{
     background: rgb(108, 198, 233);
     transform: scale(1.2);
 }

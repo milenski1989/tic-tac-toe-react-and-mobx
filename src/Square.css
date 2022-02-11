@@ -1,11 +1,14 @@
-.field{
+.field-red, .field-blue{
     width: 100px;
 height: 100px;
     border: 1px solid black;
     transition: 0.3s all linear;
-    background: whitesmoke;
 }
 
-.field:hover{
+
+.field-red:hover{
     background: rgb(238, 108, 108);
+}
+.field-blue:hover{
+    background-color: rgb(37, 161, 233);
 }
