@@ -12,7 +12,7 @@ class Store {
   @observable winner = false;
   @observable resultX = 0
   @observable resultO = 0
-  @observable disableAllButtons = false
+  @observable disableAllFields = false
 
 
   @action.bound play(index) {
@@ -82,12 +82,12 @@ class Store {
     this.activePlayer = playerOne;
     this.winner = false;
     this.boardArr = Array(9).fill(null);
-    this.disableAllButtons = false
+    this.disableAllFields = false
   }
   @action.bound clearAll(){
     this.activePlayer = playerOne;
     this.boardArr = Array(9).fill(null);
-    this.disableAllButtons = false
+    this.disableAllFields = false
   }
 
 
