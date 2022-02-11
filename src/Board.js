@@ -17,7 +17,7 @@ const Board = observer(() => {
 
       {store.winner ? (
         <>
-          {(store.disableAllButtons = true)}
+          {store.disableAllButtons = true}
           <h1 className="result">{store.activePlayer} wins!</h1>{" "}
           <button className="btn" onClick={store.playAgain}>
             play another game
@@ -43,4 +43,4 @@ const Board = observer(() => {
 
 export default Board;
 
-/*  */
+

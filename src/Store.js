@@ -19,7 +19,6 @@ class Store {
     if (this.boardArr[index]) {
       return;
     }
-this.gameStarted = true
   
     this.boardArr[index] = this.activePlayer;
 
